@@ -87,3 +87,12 @@ let n1 = !true;
 let n2 = !false;
 let n3 = !111;
 console.log(n3);
+
+// 삼항 연산자
+// - 조건식 ? 값1 : 값2
+// - 조건식이 true 이면 값 1을 반환하고, false이면 2를 반환한다
+
+let number = 10;
+let result2 = number % 2 == 1 ? "홀수입니다" : "짝수입니다"
+console.log(result2);
+
