@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: lightgray;
+  }
+  
+  header {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .logo {
+    display: block;
+    width: 140px;
+    height: 37px;
+    background: url(//img1a.coupangcdn.com/image/static/common/bg_gnb_sprite_20140122.png)
+      no-repeat -988px -108px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  li {
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .products {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .product span {
+    flex: 1;
+  }
+  
+  .product input {
+    margin-right: 10px;
+    width: 50px;
+    height: 28px;
+    text-align: center;
+  }
+  
+  .addCart {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .addCart:hover {
+    background-color: #45a049;
+  }
+  
+  .cart {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .cartTotal {
+    text-align: right;
+  }
+  
+  .totalPrice {
+    font-weight: bold;
+  }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"></a>
+    </header>
+
+    <!-- html, js, css 파일 생성 -->
+    <!-- 장바구니담기 버튼에 이벤트 추가 -->
+    <!-- 상품정보는 html에 작성하고 장바구니 목록은 목록태그에 추가 -->
+    <!-- 장바구니담기 버튼 클릭 시 해당 상품의 정보를 가져와서 추가 -->
+    <!-- 장바구니 목록 추가 시 총 주문금액이 더해지는 방식 -->
+    <!-- html, css 구성은 자기 맘대로 -->
+
+    <section>
+      <h2>상품 정보</h2>
+      <div class="products">
+        <div class="product">
+          <span>샴푸</span>
+          <span class="price">8000원</span>
+          <input type="number" min="0" value="0" class="quantity" />
+          <button class="addCart">장바구니 담기</button>
+        </div>
+        <div class="product">
+          <span>마스크 100개입</span>
+          <span class="price">9900원</span>
+          <input type="number" min="0" value="0" class="quantity" />
+          <button class="addCart">장바구니 담기</button>
+        </div>
+        <div class="product">
+          <span>생수 1L 24개</span>
+          <span class="price">12000원</span>
+          <input type="number" min="0" value="0" class="quantity" />
+          <button class="addCart">장바구니 담기</button>
+        </div>
+        <div class="product">
+          <span>두루마리 화장지 10롤</span>
+          <span class="price">10000원</span>
+          <input type="number" min="0" value="0" class="quantity" />
+          <button class="addCart">장바구니 담기</button>
+        </div>
+        <div class="product">
+          <span>멀티비타민</span>
+          <span class="price">32000원</span>
+          <input type="number" min="0" value="0" class="quantity" />
+          <button class="addCart">장바구니 담기</button>
+        </div>
+        <div class="product">
+          <span>물티슈 100매 10팩</span>
+          <span class="price">11000원</span>
+          <input type="number" min="0" value="0" class="quantity" />
+          <button class="addCart">장바구니 담기</button>
+        </div>
+        <div class="product">
+          <span>라면 5개</span>
+          <span class="price">3300원</span>
+          <input type="number" min="0" value="0" class="quantity" />
+          <button class="addCart">장바구니 담기</button>
+        </div>
+      </div>
+
+      <h2>장바구니 목록</h2>
+      <div class="cart">
+        <ul class="cartList"></ul>
+        <p class="cartTotal">
+          총 주문금액: <span class="totalPrice">0원</span>
+        </p>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    // document.querySelectorAll(product);
+    // 반복문
+    // for (product.length) {
+    //   let product = product[i]
+    //   let addBtn = product.querySelector('.addCart')
+    //   addBtn.addEventListener('click', addCart);
+    // }
+
+    // function addCart(event) {
+    //   let product = event.target.parentElement;
+    //   let 상품명 = product.querySelector('span').textContent;
+    //   let 금액 = product.querySelector('.price').textContent
+    //   let 원없는금액 = 금액.slice(0,-1);
+    //   console.log(상품명);
+
+    //   let hello3 = document.createElement("li");
+    //   hello3.textContent = "상품명 + 개수 + 금액*개수";
+    //   document.querySelector("ul").appendChild(hello3);
+    // }
+  </script>
+</html>
